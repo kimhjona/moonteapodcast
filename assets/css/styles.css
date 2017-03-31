@@ -517,6 +517,16 @@ input {
   max-width: 250px;
 }
 
+a.info {
+  color:lightcoral;
+  font-weight: bold;
+}
+
+a.info:hover {
+  text-decoration: underline;
+  color: white;
+}
+
 
 /*@media screen and (max-width:600px) {  
   #github-button {
