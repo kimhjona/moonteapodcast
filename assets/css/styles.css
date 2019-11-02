@@ -6,7 +6,7 @@ body {
 
 .container {
   max-width: 34rem;
-  margin-left: 1rem;
+  margin: 0 1rem;
 }
 
 .headshot {
@@ -119,4 +119,15 @@ a.btn-cta-primary:hover,
   background-color: #074f66;
   min-height: 100%;
   margin: 0 1rem 0 0;
+}
+
+@media (max-width: 400px) {
+  .promo .title span {
+    font-size: 50px;
+    margin-top: 0.5rem;
+  }
+
+  .headshot {
+    width: 60px;
+  }
 }
