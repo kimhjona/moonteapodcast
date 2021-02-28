@@ -1,7 +1,8 @@
 body {
-  font-family: "Lato", arial, sans-serif;
-  color: #444444;
-  background: #f7f5e9;
+  font-family: "Varela Round", sans-serif;
+  color: #201e1f;
+  background: #b6c2d9;
+  font-size: 20px;
 }
 
 .container {
@@ -9,7 +10,7 @@ body {
   margin: 0 1rem;
 }
 
-.headshot {
+.piggy {
   height: auto;
   object-fit: contain;
   width: 100px;
@@ -17,58 +18,23 @@ body {
 
 a {
   text-decoration: none;
-  color: #17baef;
+  color: #4d7ea8;
 }
 a:hover {
   text-decoration: none;
 }
-.btn,
-a.btn {
-  transition: all 0.4s ease-in-out;
-  font-family: "Montserrat", arial, sans-serif;
-  padding: 8px 16px;
-  font-weight: bold;
-}
-.btn .fa,
-a.btn .fa {
-  margin-right: 5px;
-}
-.btn:focus,
-a.btn:focus {
-  color: #fff;
-}
-a.btn-cta-primary,
-.btn-cta-primary {
-  background: #074f66;
-  border: 1px solid #074f66;
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-a.btn-cta-primary:hover,
-.btn-cta-primary:hover {
-  background: #053c4e;
-  border: 1px solid #053c4e;
-  color: #fff;
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header {
   padding: 10px 0;
-  background: #17baef;
+  background: #4d7ea8;
   color: #fff;
   position: fixed;
   width: 100%;
-}
-.header.navbar-fixed-top {
-  background: #fff;
-  z-index: 9999;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-}
-.header.navbar-fixed-top .logo a {
-  color: #17baef;
-}
-.header.navbar-fixed-top .main-nav .nav .nav-item a {
-  color: #666666;
 }
 .header .logo {
   margin: 0;
@@ -76,26 +42,28 @@ a.btn-cta-primary:hover,
   padding-top: 10px;
 }
 
-.promo {
-  background-size: cover;
-}
-
 .title {
   display: flex;
   flex-wrap: wrap-reverse;
   align-items: center;
+  font-family: "Lato", arial, sans-serif;
 }
 
 .promo .title span {
-  font-size: 98px;
-  color: #074f66;
+  font-size: 5rem;
+  color: #201e1f;
   margin-top: 0;
-  margin-right: 1.5rem;
-  font-weight: 700;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.promo .title span:last-of-type {
+  margin-right: 1rem;
+  font-style: normal;
 }
 
 .promo .intro {
-  font-size: 28px;
+  font-size: 2rem;
   margin-bottom: 30px;
   margin-top: 10px;
 }
@@ -111,23 +79,57 @@ a.btn-cta-primary:hover,
 }
 
 .projects-folder {
+  margin: 1rem 0;
+  max-width: 400px;
   display: flex;
 }
 
 .fancy-line {
   width: 2px;
-  background-color: #074f66;
+  background-color: #201e1f;
   min-height: 100%;
   margin: 0 1rem 0 0;
 }
 
-@media (max-width: 400px) {
+.email {
+  color: #201e1f;
+}
+
+.pod-links {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.pod-links a {
+  display: flex;
+  margin-right: 10px;
+  color: initial;
+}
+
+.pod-links img {
+  margin-right: 5px;
+  width: 25px;
+  opacity: 0.7;
+}
+
+@media (max-width: 550px) {
   .promo .title span {
     font-size: 50px;
     margin-top: 0.5rem;
   }
 
-  .headshot {
+  .piggy {
     width: 60px;
+  }
+
+  .pod-links {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .pod-links a {
+    margin-bottom: 10px;
   }
 }
