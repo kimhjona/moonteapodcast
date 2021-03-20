@@ -44,7 +44,6 @@ p {
 
 .title {
   display: flex;
-  flex-wrap: wrap-reverse;
   align-items: center;
   font-family: "Lato", arial, sans-serif;
 }
@@ -111,11 +110,12 @@ p {
   margin-right: 5px;
   width: 25px;
   opacity: 0.7;
+  align-self: baseline;
 }
 
 @media (max-width: 550px) {
   .promo .title span {
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 0.5rem;
   }
 
@@ -131,5 +131,9 @@ p {
 
   .pod-links a {
     margin-bottom: 10px;
+  }
+
+  .promo .title span:last-of-type {
+    margin-right: 0;
   }
 }
